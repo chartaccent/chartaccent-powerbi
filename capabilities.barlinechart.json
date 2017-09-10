@@ -38,6 +38,9 @@
             }
         }
     ],
+    "sorting": {
+        "default": {}
+    },
     "objects": {
         "yAxis": {
             "displayName": "Y Axis",

@@ -153,7 +153,6 @@ module powerbi.extensibility.visual {
             let chart = this.getChart(options);
             let chartJSON = JSON.stringify(chart);
             if (chartJSON != this.chart) {
-                console.log("view.update", options.viewMode);
                 if (options.viewMode == ViewMode.Edit) {
                     this.view.update({ chart: chart, mode: "editing" });
                 } else {
@@ -176,7 +175,6 @@ module powerbi.extensibility.visual {
         }
 
         public update(options: VisualUpdateOptions) {
-            console.log("update", options);
             try {
                 if (!options.dataViews || !options.dataViews[0]) {
                     // this.view.update({ chart: null });
